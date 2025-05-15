@@ -1,0 +1,15 @@
+graph TD
+    A["Start: Understand Algorithms [2, 4]"] --> B{"Data Acquisition"};
+    B --> B1["Collect/Generate Benign DNS Data"];
+    B --> B2["Generate DNS Tunneling Data (Iodine, DNSCat2)"];
+    B1 --> C["Data Preprocessing (Parse Domains)"];
+    B2 --> C;
+    C --> D{"Algorithm Implementation (Python)"};
+    D --> D1["Implement Character Frequency Analysis [2]"];
+    D --> D2["Implement Bigram Analysis [4]"];
+    D1 --> E["Test on Mixed Dataset"];
+    D2 --> E;
+    E --> F{"Performance Evaluation"};
+    F --> F1["Calculate Metrics (Detection Rate, FPR)"];
+    F1 --> G["Analyze Results & Challenges"];
+    G --> H["End: Report Findings"];
